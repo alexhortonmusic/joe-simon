@@ -1,11 +1,13 @@
 .header
+  width: 100%
 
   .topbar
     background-color: $dark-gray
     margin: 0 !important
-    max-width: 100%
+    min-width: 100% !important
 
     .topmenu
+      width: 100%
 
       li
 
@@ -13,16 +15,185 @@
           color: $label-color
 
   .navbar-logo
-    margin-top: 30px
+    width: 90%
+    max-width: 1024px
+    margin: 20px auto 0
+
+    display: flex
+    flex-direction: row
+    justify-content: space-between
 
     .logo
-      font-family: 'Ubuntu', sans-serif
-      text-transform: uppercase
-      font-size: 2rem
+
+      img
+        width: 180px
 
 
     .navigation
+      display: flex
+      flex-direction: column
+      justify-content: center
 
+      ul
+        font-size: 1.2rem
+        font-family: 'Lato', sans-serif
+        text-transform: uppercase
+
+        li
+
+          a
 
 
     .search
+      display: flex
+      flex-direction: column
+      justify-content: center
+
+      i
+        color: $primary-color
+        padding-bottom: 5px
+
+.hero
+  width: 85%
+  margin: 0 auto
+  font-family: 'Raleway', Tacoma, sans-serif
+  background-image: url('../joe_simon_slider.jpg')
+  background-size: cover
+  min-height: 80vh
+
+  display: flex
+  flex-direction: row
+  justify-content: flex-end
+
+  .headlineCTA
+    width: 60%
+
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    .headline
+      width: 80%
+      margin: 0 auto 10px
+
+      p
+        font-size: 3.2rem
+        text-align: right
+        font-weight: 300
+
+    .info
+      width: 80%
+      margin: 0 auto 20px
+
+      display: flex
+      flex-direction: row
+      justify-content: flex-end
+
+      p
+        font-size: 1.2rem
+        width: 70%
+        text-align: justify
+
+    .hero-cta-wrap
+      width: 80%
+      margin: 0 auto
+
+      display: flex
+      flex-direction: row
+      justify-content: flex-end
+
+      a.hero-cta
+        height: 60px
+        width: 300px
+        background-color: $primary-color
+        border: 2px solid $black
+        transition: 0.2s
+
+        .btn
+          height: 100%
+          text-align: center
+          line-height: 100%
+          color: $white
+          font-weight: 400
+          font-size: 1.2rem
+
+          display: flex
+          flex-direction: column
+          justify-content: center
+
+          p
+            letter-spacing: 4px
+            margin: 0
+            line-height: 100%
+            transition: 0.2s
+
+
+
+// ---- for CTA hover -----
+.btn-hover
+  background-color: $white
+  transition: 0.2s
+
+.btn-hover-p
+  color: $primary-color
+  letter-spacing: 0 !important
+  transition: 0.2s
+
+
+
+
+.divider
+  width: 40%
+  margin: 60px auto
+
+  hr
+    border: 1px solid $primary-color
+
+.struggles
+  font-family: 'Raleway', Verdana, sans-serif
+
+  .struggle-heading
+    font-size: 2rem
+    text-align: center
+    margin-bottom: 40px
+
+  .struggles-col-wrap
+    width: 85%
+    margin: 0 auto
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+
+    .col
+      width: 30%
+      padding: 10px 10px 0
+      transition: 0.2s
+
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+
+      div
+        display: flex
+        flex-direction: row
+        justify-content: center
+
+        margin-bottom: 20px
+
+        i
+          color: $secondary-color
+
+      // .heading
+      //
+      //   p
+
+      .info
+        font-family: 'Lato', Verdana, sans-serif
+
+        p
+
+    .col:hover
+      background-color: #f1f3fb
+      box-shadow: 0px 0px 30px 0px rgba(50, 50, 50, 0.5)
+      transition: 0.2s

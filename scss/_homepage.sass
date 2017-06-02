@@ -44,14 +44,39 @@
           a
 
 
-    .search
+    .nav-cta-wrap
+      width: 200px
+      // margin: 0 auto
+
       display: flex
       flex-direction: column
       justify-content: center
 
-      i
-        color: $primary-color
-        padding-bottom: 5px
+      a.nav-cta
+        height: 40px
+        width: 200px
+        background-color: $success-color
+        border: 2px solid $success-color
+        transition: 0.2s
+
+        .btn
+          height: 100%
+          text-align: center
+          line-height: 100%
+          color: $white
+          font-weight: 400
+          font-size: .8rem
+
+          display: flex
+          flex-direction: column
+          justify-content: center
+
+          p
+            letter-spacing: 4px
+            margin: 0
+            line-height: 100%
+            transition: 0.2s
+
 
 .hero
   width: 85%
@@ -94,6 +119,9 @@
         width: 70%
         text-align: justify
 
+        a
+
+
     .hero-cta-wrap
       width: 80%
       margin: 0 auto
@@ -129,28 +157,17 @@
 
 
 
-// ---- for CTA hover -----
-.btn-hover
-  background-color: $white
-  transition: 0.2s
-
-.btn-hover-p
-  color: $primary-color
-  letter-spacing: 0 !important
-  transition: 0.2s
-
-
-
 
 .divider
-  width: 40%
-  margin: 60px auto
+  width: 50%
+  margin: 60px auto 100px
 
   hr
     border: 1px solid $primary-color
 
 .struggles
   font-family: 'Raleway', Verdana, sans-serif
+  margin-bottom: 100px
 
   .struggle-heading
     font-size: 2rem
@@ -184,16 +201,127 @@
         i
           color: $secondary-color
 
-      // .heading
-      //
-      //   p
+      .heading
+
+        p
+          margin: 0
+          font-size: 1.5rem
+          font-family: 'Lato', Verdana, sans-serif
+          text-align: center
 
       .info
         font-family: 'Lato', Verdana, sans-serif
 
         p
 
-    .col:hover
-      background-color: #f1f3fb
-      box-shadow: 0px 0px 30px 0px rgba(50, 50, 50, 0.5)
-      transition: 0.2s
+.homepage-video
+  background: linear-gradient(rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.35)), url('../handshake.jpg')
+  background-size: cover
+  background-position: center
+  height: 400px
+
+  display: flex
+  flex-direction: row
+  justify-content: center
+
+  img
+    align-self: center
+    height: 200px
+
+.get-in-touch
+  height: 30vh
+  background-image: linear-gradient(rgba(36, 53, 116, 0.6),rgba(36, 53, 116, 0.6)), url('../oldphone.jpg')
+  background-size: cover
+  background-position: 0% 55%
+
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: center
+
+  .ready
+    width: 40%
+    min-width: 450px
+
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    p
+      text-align: center
+      color: $white
+      font-family: 'Raleway', 'Helvetica Neue', sans-serif
+      font-weight: 400
+      font-size: 3.1rem
+
+  .btn-wrap
+    width: 40%
+    min-width: 450px
+
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    a.touch-cta
+      display: block
+      width: 300px
+      height: 60px
+      border: 1px solid
+      background: $white
+      margin: 0 auto
+
+      .btn
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+        p
+          letter-spacing: 4px
+          text-align: center
+          margin: 0
+          line-height: 100%
+          transition: 0.2s
+
+.joe-story
+
+  .joe-story-wrap
+    width: 70%
+    min-width: 310px
+    margin: 30px auto
+
+    .heading
+      font-family: 'Raleway', Verdana, sans-serif
+      font-weight: 400
+      font-size: 2rem
+      text-align: center
+
+
+    .content
+      font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif
+
+      .fullContent
+
+
+      .showMore
+        color: $secondary-color
+        cursor: pointer
+        width: 140px
+
+      .showLess
+        color: $secondary-color
+        cursor: pointer
+        width: 140px
+
+
+
+
+// ---- for CTA hover -----
+.btn-hover
+  background-color: $white
+  transition: 0.2s
+
+.btn-hover-p
+  color: $primary-color
+  letter-spacing: 0 !important
+  transition: 0.2s

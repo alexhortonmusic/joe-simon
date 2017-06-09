@@ -357,7 +357,8 @@
   bottom: 0
   width: 400px
   padding: 25px
-  background: #F45B69
+  background: $white
+  color: $primary-color
 
   .title
     font-weight: 700
@@ -381,7 +382,7 @@
 .process ul li:nth-child(even) div::before
   left: -15px
   border-width: 8px 16px 8px 0
-  border-color: transparent #F45B69 transparent transparent
+  border-color: transparent $white transparent transparent
 
 
 .process ul li:nth-child(odd) div
@@ -391,7 +392,7 @@
 .process ul li:nth-child(odd) div::before
   right: -15px
   border-width: 8px 0 8px 16px
-  border-color: transparent transparent transparent #F45B69
+  border-color: transparent transparent transparent $white
 
 .process ul li::after
   background: $white
@@ -399,7 +400,7 @@
 
 
 .process ul li.in-view::after
-  background: #F45B69
+  background: $white
 
 
 .process ul li div
@@ -426,7 +427,7 @@
 
 .call-podcast
   width: 50%
-  margin: 120px auto
+  margin: 120px auto 150px
   display: flex
   flex-direction: row
   justify-content: space-around
@@ -502,6 +503,7 @@
           transition: 0.2s
 
 .joe-story
+  margin-bottom: 150px
 
   .joe-story-wrap
     width: 70%

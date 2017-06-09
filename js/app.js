@@ -3,14 +3,10 @@ $(document).foundation();
 // --------- Homepage ----------- //
 
 // ---------------- sticky nav ----------------- //
-// const stickNav = () => {
-//
-// }
-//
-// stickNav()
 
 
-// call to action btn in hero image
+
+// ----- call to action btn in hero image-------//
 let hoverCTA = '.cta'
 
 $(hoverCTA).hover(

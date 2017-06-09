@@ -5,8 +5,11 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joe Simon</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:300,400" rel="stylesheet">
     <script src="https://use.fontawesome.com/022879ddbb.js"></script>
+    <link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick.css"/>
+    <!-- Add the new slick-theme.css if you want the default styling -->
+    <link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
@@ -23,9 +26,9 @@
           <li>
             <a href="#"><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i></a>
           </li>
-          <li>
+          <!-- <li>
             <a href="#">&bull;&bull;</a>
-          </li>
+          </li> -->
         </ul>
       </div>
       <div class='row navbar-logo'>
@@ -35,10 +38,9 @@
         <div class='navigation'>
           <ul class="menu">
             <li><a href="#">About</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Media</a></li>
+            <li><a href="#">Podcast</a></li>
             <li><a href="#">Case Studies</a></li>
-            <li><a href="#">Story</a></li>
+            <li><a href="#">FAQ</a></li>
           </ul>
         </div>
         <div class='nav-cta-wrap'>
@@ -76,73 +78,126 @@
     </div>
 
     <div class='struggles'>
-      <!-- <p class='struggle-heading'>What are your struggles?</p> -->
 
       <div class='struggles-col-wrap'>
-
-        <div class='col'>
-          <div>
-            <i class="fa fa-usd fa-2x" aria-hidden="true"></i>
-          </div>
-          <div class='heading'>
-            <p>Lower Overhead Costs</p>
-          </div>
-          <div class='info'>
-            <p>Are your reimbursements from insurance companies too low, and the costs of staff, rent, and continuing education too high, year after year? Learn how to minimize costs and maximize profits instead for a change.</p>
-          </div>
-        </div>
 
         <div class='col'>
           <div>
             <i class="fa fa-retweet fa-2x" aria-hidden="true"></i>
           </div>
           <div class='heading'>
-            <p>Increase Referrals</p>
+            <p>Build an automated practice</p>
           </div>
           <div class='info'>
-            <p>Is a combination of competing referral sources and the rise of pop-up specialties preventing enough new patients walking through your door? Learn how to plug current holes in your bucket, as well as implement new revenue streams.</p>
+            <p>Structure your private practice so it thrives while saving you time and energy.</p>
           </div>
         </div>
 
         <div class='col'>
           <div>
-            <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-usd fa-2x" aria-hidden="true"></i>
           </div>
           <div class='heading'>
-            <p>Alleviate Frustration</p>
+            <p>Find the money already in your practice</p>
           </div>
           <div class='info'>
-            <p>Do you feel alone at the top, unable to explain your frustrations to either your staff or your spouse? Confide in and learn from Dr. Simon—someone who has been in your shoes before.</p>
+            <p>Learn how to monetize the clients you already have.</p>
+          </div>
+        </div>
+
+        <div class='col'>
+          <div>
+            <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
+          </div>
+          <div class='heading'>
+            <p>Become an expert medpreneur</p>
+          </div>
+          <div class='info'>
+            <p>Become your community’s authority on the intersection of business and medical practice.</p>
           </div>
         </div>
 
       </div>
-
-
     </div>
 
     <div class='homepage-video'>
-      <!-- full width image -->
-      <img src="./play.png" alt="Play Button">
+      <!-- full width background image -->
+      <p class='heading'>Meet Dr. Joe</p>
+      <p class='details'>Watch the introductory video</p>
+      <div class='play-btn'>
+        <img src="./play.png" alt="Play Button">
+      </div>
     </div>
 
-    <div class='hero-cta-wrap'>
-      <a href="#" class='hero-cta cta' id='cta-hero'>
-        <div class='btn'>
-          <p>GET IN TOUCH</p>
-        </div>
-      </a>
+    <div class='call-email'>
+      <div class='schedule-call'>
+        <a href="#" class='hero-cta cta' id='cta-call'>
+          <div class='btn'>
+            <p>SCHEDULE A CALL</p>
+          </div>
+        </a>
+      </div>
+      <div class='email'>
+        <a href="#" class='hero-cta cta' id='cta-email'>
+          <div class='btn'>
+            <p>EMAIL DR. JOE</p>
+          </div>
+        </a>
+      </div>
     </div>
 
     <div class='process'>
+      <p class='heading'>The simple, three-step process to getting started:</p>
       <!-- do the like the timeline trick I did -->
+      <ul>
+        <li>
+          <div class='step'>
+            <p class='title'>1. Triage Call</p>
+            <p class='desc'>
+              A 15-minute phone call with Dr. Joe to learn about each other and determine the most urgent needs of your practice, as well as the first actionable steps to improving your practice.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class='step'>
+            <p class='title'>2. Strategy Session</p>
+            <p class='desc'>
+              An in-depth strategy session with Dr. Joe to develop a more personalized plan, and to provide a trial run for your partnership.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class='step'>
+            <p class='title'>3. PPO Series</p>
+            <p class='desc'>
+              Complete the process of Private Practice Optimization by becoming partners with Dr. Joe, and use his time, energy, and expertise to maximize the untapped potential in your practice.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class='call-podcast'>
+      <div class='podcast'>
+        <a href="#" class='hero-cta cta' id='cta-podcast'>
+          <div class='btn'>
+            <p>LISTEN TO A PODCAST</p>
+          </div>
+        </a>
+      </div>
+      <div class='schedule-call'>
+        <a href="#" class='hero-cta cta' id='cta-call1'>
+          <div class='btn'>
+            <p>TALK TO DR. JOE</p>
+          </div>
+        </a>
+      </div>
     </div>
 
     <div class='joe-story'>
       <div class='joe-story-wrap'>
         <p class='heading'>Why Partner with Dr. Joe Simon?</p>
         <div class='content'>
-          <!-- <p class='teaser'>Voluptate enim deserunt magna nisi nulla duis cillum nostrud. Reprehenderit eu dolor excepteur non cupidatat culpa exercitation quis mollit velit nisi amet eiusmod qui. Anim ea cillum in velit commodo enim amet mollit do voluptate irure deserunt ex labore eiusmod. Adipisicing ea enim do Lorem velit ipsum labore deserunt nisi excepteur mollit minim enim amet exercitation et. Sit ex ullamco dolor sit eiusmod commodo tempor ipsum nulla ea pariatur deserunt.</p> -->
           <div class='fullContent'>
             <p>Voluptate enim deserunt magna nisi nulla duis cillum nostrud. Reprehenderit eu dolor excepteur non cupidatat culpa exercitation quis mollit velit nisi amet eiusmod qui. Anim ea cillum in velit commodo enim amet mollit do voluptate irure deserunt ex labore eiusmod. Adipisicing ea enim do Lorem velit ipsum labore deserunt nisi excepteur mollit minim enim amet exercitation et. Sit ex ullamco dolor sit eiusmod commodo tempor ipsum nulla ea pariatur deserunt.</p>
             <p>Cillum esse laborum excepteur consectetur nisi qui esse dolore ut laboris nulla sit quis elit et reprehenderit. Aute exercitation nulla eiusmod exercitation ut et eiusmod laboris eiusmod sunt sunt cillum et aute laborum laboris. Aliqua excepteur ut culpa amet esse occaecat sunt. Veniam sint quis quis Lorem reprehenderit quis veniam deserunt laboris dolor sit anim. Enim sint ipsum labore magna proident et Lorem Lorem commodo occaecat. Elit duis velit eu Lorem aliquip ad magna sit dolor in magna mollit amet. Consequat pariatur ad sit est pariatur qui deserunt dolore eiusmod ex non ex.</p>
@@ -154,15 +209,18 @@
     </div>
 
     <div class='testimonials'>
-      <!-- 3 testimonials -->
+      <div class='testimonials-wrap'>
+
+      </div>
     </div>
 
     <div class='get-in-touch'>
       <div class='ready'>
         <p>Ready to make a change?</p>
+        <p>If you want to be a more confident leader, feel professionally supported, and significantly grow your practice, schedule a call with Dr. Joe, and make sure you aren’t in the same place next year as you are right now.</p>
       </div>
       <div class='btn-wrap'>
-        <a href='#' class='touch-cta'>
+        <a href='#' class='touch-cta cta' id='cta-footer'>
           <div class='btn'>
             <p>GET IN TOUCH</p>
           </div>
@@ -171,14 +229,38 @@
     </div>
 
     <footer>
-      <!-- social links -->
-      <!-- quick links -->
+      <div class='links'>
+        <div class='social'>
+          <ul class='menu topmenu'>
+            <li>
+              <a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i></a>
+            </li>
+        </div>
+        <div class='quick'>
+          <ul class="menu">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Podcast</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
       <!-- credits -->
+      <div class="credits">
+        <p>&#169; 2017 Dr. Joe Simon || Design/Build by <a href='http://www.elevateunited.com'>Elevate United</a></p>
+      </div>
     </footer>
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/dist/what-input.js"></script>
     <script src="node_modules/readmore-js/readmore.min.js"></script>
+    <script type="text/javascript" src="bower_components/slick-carousel/slick/slick.min.js"></script>
     <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
     <script src="js/app.js"></script>
   </body>

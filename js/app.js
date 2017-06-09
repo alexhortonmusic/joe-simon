@@ -2,27 +2,12 @@ $(document).foundation();
 
 // --------- Homepage ----------- //
 
-// ---------- TRY TO FIGURE THIS OUT!!!!! ----------- //
-// hover effects
-// function addHoverClass (button) {
-//   let test = button + ' .btn'
-//   let test2 = button + ' .btn p'
-//   $(test).addClass( "btn-hover" )
-//   $(test2).addClass( "btn-hover-p" )
+// ---------------- sticky nav ----------------- //
+// const stickNav = () => {
+//
 // }
 //
-// function removeHoverClass (button) {
-//   let test = button + ' .btn'
-//   let test2 = button + ' .btn p'
-//
-//   $(test).removeClass( "btn-hover" )
-//   $(test2).removeClass( "btn-hover-p" )
-// }
-
-// $(heroCTA).hover(
-//   addHoverClass(heroCTA),
-//   removeHoverClass(heroCTA)
-// )
+// stickNav()
 
 
 // call to action btn in hero image
@@ -50,16 +35,75 @@ $('.fullContent').readmore({
   lessLink: `<p class='showLess'>See less <i class="fa fa-caret-square-o-up" aria-hidden="true"></i></p>`
 })
 
-// showMore.click(
-//   function() {
-//     showMore.addClass('hide')
-//     $('.fullContent').removeClass('hide')
-//   }
-// )
-//
-// showLess.click(
-//   function() {
-//     $('.fullContent').addClass('hide')
-//     showMore.removeClass('hide')
-//   }
-// )
+// ------------- testimonials slider --------------------- //
+$.ajax({
+  dataType: 'json',
+  url: 'js/testimony.json'
+})
+.done(function(obj) {
+  console.log('Work')
+  // array of testimonials
+  let tArr = obj.testimonials
+  tArr.forEach(buildTestimonial)
+  buildCarousel()
+})
+.fail(function() {
+  console.log('FAIL')
+})
+
+let tCarousel = $('.testimonials-wrap')
+
+const buildTestimonial = (t, i) => {
+  // t = single testimonial
+  let testimonial =
+  `
+    <div class='single-testimonial'>
+      <div class='thumb'>
+        <i class="fa fa-thumbs-up fa-4x" aria-hidden="true"></i>
+      </div>
+      <div class='details'>
+        <div class='desc'>"${t.desc}"</div>
+        <div class='title'>- ${t.title}</div>
+      </div>
+    </div>
+  `
+
+  tCarousel.append(testimonial)
+  console.log(i)
+}
+
+const buildCarousel = () => {
+  tCarousel.slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
+  })
+}
+
+//-------------- process timeline -------------------- //
+function isElementInViewport(el) {
+  let rect = el.getBoundingClientRect()
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  )
+}
+
+let items = document.querySelectorAll(".process li");
+
+// code for the isElementInViewport function
+
+function callbackFunc() {
+  for (let i = 0; i < items.length; i++) {
+    if (isElementInViewport(items[i])) {
+      items[i].classList.add("in-view")
+    }
+  }
+}
+
+window.addEventListener("load", callbackFunc)
+window.addEventListener("scroll", callbackFunc)
